@@ -10,7 +10,7 @@ import jakarta.validation.constraints.Size;
 public class  Publicacao {
 
 	@NotBlank(message = "O autor não pode ser vazio")
-	@Size(max = 25)
+	@Size(max = 25 ,message= "Não pode ser maior do que 25 caracteres")
 	private String autor;
 	
 	private LocalDate dataPublicacao;
@@ -43,3 +43,4 @@ public class  Publicacao {
 	
 	
 }
+
