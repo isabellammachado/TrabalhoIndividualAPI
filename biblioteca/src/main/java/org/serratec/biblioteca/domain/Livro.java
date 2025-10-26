@@ -19,7 +19,7 @@ public class Livro {
 		@GeneratedValue(strategy= GenerationType.IDENTITY)
 		private Long id;
 		
-		@Positive
+	
 		@NotBlank(message = "O título não pode ultrapassar 40 caracteres")
 		@Size(max=40)
 		@Column(length = 40 , nullable =false)
@@ -67,3 +67,4 @@ public class Livro {
 		
 		
 }
+
